@@ -1,0 +1,52 @@
+@font-face {
+  font-family: dna;
+  /*make up this value*/
+  src: url(../assets/bromello.ttf);
+  /* font saved to assets*/
+}
+
+@font-face {
+  font-family: gogo;
+  src: url(../assets/Just.otf);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li a:link {
+  text-decoration: none;
+  font-family: dna;
+  font-size: 30pt;
+}
+
+nav ul li a:visited {
+  color: rgb(255, 102, 140);
+}
+
+nav ul li a:focus {
+  color: rgb(102, 102, 255);
+  font-size: 20pt;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a:active {
+  font-size: 20pt;
+}
+
+#mainArea {
+  font-family: gogo;
+  font-size: 20pt;
+}
+
+#socialMedia img {
+  padding: 10px;
+  margin: 15px;
+}
+
+}

@@ -1,0 +1,115 @@
+body{
+	background  : orange;
+	margin 		: 0px;
+	padding     : 0px;
+}
+
+header{
+	background 	: black;
+	height 		: 20vh;
+	position 	: relative;
+}
+
+#smiley{
+	position 	: absolute;
+	top 		: 1px;
+	right 		: 50px;
+	color 		: white;
+	font-size   : 5vh;
+}
+/*floatnav.html*/
+nav{
+}
+
+nav ul{
+	border 		: solid 1px black;
+	list-style 	: none;
+	padding 	: 0px;
+}
+
+nav ul li{
+	border 		: solid 0px black;
+	width 		: 25%;
+	background 	: white;
+	float 		: left;
+}
+
+#mainArea{
+	clear 		: both;
+	border 		: solid 1px black;
+}
+
+.column{
+	background 	: grey;
+	width 		: 33.3333%;
+	min-height 	: 80vh;
+	float 		: left;
+
+}
+
+.content{
+	padding 	: 20px;
+	border 		: solid 1px black;
+	min-height 	: 80vh;
+}
+
+
+
+/*floatexample.html*/
+.parentBox{
+	border 		: solid 1px black;
+	float 		: left;
+}
+
+.sampleBox{
+	border 		: solid 1px black;
+	background 	: grey;
+	width 		: 200px;
+	height 		: 200px;
+	float 		: left;
+	margin 		: 0px;
+}
+
+.image{
+	clear 		: both;
+}
+
+/*float.html*/
+#box1{
+	border 		: solid 1px black;
+	width 		: 100px;
+	height 		: 100px;
+	background  : rgba(255,255,255,.7);
+	float 		: left;
+}
+
+#box2{
+	border 		: solid 1px black;
+	width 		: 120px;
+	height 		: 120px;
+	background  : rgba(0,255,0,.7);
+	float 		: left;
+}
+
+#box3{
+	border 		: solid 1px black;
+	width 		: 150px;
+	height 		: 150px;
+	background  : rgba(0,0,255,.7);
+	clear 		: both;
+}
+
+#socialMedia{
+	height 		: 30vh;
+	width 		: 70px;
+	border 		: solid 1px black;
+	background 	: white;
+
+	position 	: fixed;
+	left 		: 0px;
+	top 		: 40%;
+	z-index 	: 1;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+

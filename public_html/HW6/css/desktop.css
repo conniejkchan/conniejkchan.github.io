@@ -1,0 +1,127 @@
+body {
+  background: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  border: solid 0px white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border: solid 0px white;
+  position: fixed;
+  flex-grow: initial;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  background: #dd99ff;
+}
+
+#logo {
+  border: solid 0px white;
+  color: white;
+  text-align: center;
+  font-size: 40pt;
+  font-family: heading;
+  flex-grow: 1;
+}
+
+#logo a {
+  color: white;
+  text-decoration: none;
+}
+
+#contentArea {
+  border: solid 0px black;
+  margin-top: 50px;
+  flex-grow: 1;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  border: solid 0px white;
+  flex-grow: 1;
+  min-height: 300px;
+  display: flex;
+}
+
+.row section {
+  border: solid 0px white;
+  flex-grow: 1;
+  margin: 2%;
+  justify-content: space-around;
+  color: white;
+  font-size: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#left {
+  flex-grow: 1;
+  color: black;
+  font-size: 10vh;
+  padding: 100px;
+  font-family: heading;
+}
+
+#right {
+  flex-grow: 1;
+  color: black;
+  font-size: 5vh;
+  padding: 100px;
+  font-family: main;
+}
+
+nav {
+  border: solid 0px white;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  border: solid 0px white;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  flex-grow: 1;
+  display: flex;
+}
+
+nav ul a {
+  display: block;
+  flex-grow: 1;
+  text-decoration: none;
+  color: white;
+  font-family: main;
+  font-size: 20pt;
+}
+
+nav ul a li {
+  border: solid 0px white;
+  text-align: center;
+}
+
+nav ul a li:hover {
+  border: solid 0px white;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+footer {
+  border: solid 0px white;
+  background: #dd99ff;
+  flex-grow: initial;
+  height: 10vh;
+  min-height: 100px;
+  display: flex;
+  position: relative;
+}

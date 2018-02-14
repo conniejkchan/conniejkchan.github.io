@@ -1,0 +1,28 @@
+body{
+	background 		: black;
+}
+
+.container-fluid, .row, .col-md-12, .col-md-4{
+	border 			: solid 0px white;
+}
+
+
+
+.card{
+	background 			: black;
+	color 				: white;
+	height 				: 1000px;
+}
+
+.custom_card_img{
+	background 			: black;
+	height 				: 600px;
+	display 			: flex;
+	flex-direction 		: column;
+	justify-content 	: center;
+}
+
+.card-img-top{
+	/*height 			: 190px;*/
+
+}

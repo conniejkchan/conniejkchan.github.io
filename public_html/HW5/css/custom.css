@@ -1,0 +1,53 @@
+body {
+  background: rgb(236, 229, 255);
+}
+
+.header {
+  height: 150px;
+  background-color: green;
+  border: 1px solid blue;
+  width: 100%;
+  margin: 0px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+
+nav ul li {
+  width: 15%;
+  border: 3px solid blue;
+  text-align: center;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.column {
+  background: red;
+  width: 50%;
+  min-height: 100vh;
+  float: left;
+}
+
+.content {
+  padding: 20px;
+  border: solid 1px black;
+  min-height: 100vh;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
