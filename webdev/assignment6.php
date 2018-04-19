@@ -9,67 +9,110 @@
     <style type="text/css">
     @import url('https://fonts.googleapis.com/css?family=Quicksand');
     body {
-        background-color: /*rgb(167,195,228);*/
+        background-color: rgb(228,170,193);
         font-family: 'Quicksand', sans-serif;
     }
+
     h1 {
         text-align: center;
-
+        font-family: 'Quicksand', sans-serif;
     }
-
-    #container {
+    .content {
+        background-color: rgb(167,195,228);
         border: 3px solid black;
         border-radius: 15px;
         width:400px;
         height:400px;
         margin-left: 500px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
     }
-    
+
+    .question {
+        margin: 50px;
+    }
+
+    #resultpage {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        margin-top: 50px;
+        margin-left: 555px;
+    }
+
+    #submit {
+        margin-left: 50px;
+    }
+
+    #error {
+        font-size: 30px;
+        color:red;
+        margin-left: 555px;
+
+    }
+
+    #try, #str {
+        margin-left: 70px;
+    }
     </style>
 </head>
 <body>
-<h1>Which BTS Member Are You?</h1>
-    <div id="container">
-        <div id="fruit">What is your favorite fruit?
-        <form method="POST" action="result.php">
-            <select name ="select" class="select">
-                <option value="question">Select a Fruit</option>
-                <option value="apple">Apple</option>
-                <option value="strawberry">Strawberry</option>
-                <option value="orange">Orange</option>
-                <option value="mango">Mango</option>
-                <option value="watermelon">Watermelon</option>
-            </select>  <br>
-            <input type="submit" value="submit"><br>
-
-              <select name ="select" class="select">
-                <option value="question">How many items to purchase?</option>
-                <option value="apple">Apple</option>
-                <option value="strawberry">Strawberry</option>
-                <option value="orange">Orange</option>
-                <option value="mango">Mango</option>
-                <option value="watermelon">Watermelon</option>
-            </select>  <br>
-            <input type="submit" value="submit">
-
-              <select name ="select" class="select">
-                <option value="question">How many items to purchase?</option>
-                <option value="apple">Apple</option>
-                <option value="strawberry">Strawberry</option>
-                <option value="orange">Orange</option>
-                <option value="mango">Mango</option>
-                <option value="watermelon">Watermelon</option>
-            </select>  <br>
-            <input type="submit" value="submit">
-    </form>
-
-        </div>
-
+    <h1>Which BT21 Character Are You?</h1>
+    
+    <?php
+        //look for incomplete error flag
+        if($_GET['error'] === 'incomplete') {
+            print '<p id="error">Incomplete form!!!</p>';
+        }
+    ?>
+    <div id="contentQuiz" class="content">
+    <?php
+        if($_COOKIE['bt21']) {
+            print '<p id="str">You are '.$_COOKIE['bt21'].'!!</p>';
+            print '<img src="images/' . $_COOKIE['bt21'] . '.png">';
+            print '<br>';
+            print '<a id="try" href="tryagain.php">Try Again</a>';
+        }
+        else {
+            print '<form method="POST" action="processdata.php">
+            <div class="question">
+            What is your favorite fruit? <br>
+                <select name ="fruit">
+                    <option value="">Select a Fruit</option>
+                    <option value="apple">Apple</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="orange">Orange</option>
+                    <option value="mango">Mango</option>
+                </select>  <br>
+            </div>
+            <div class="question">
+            What is your favorite color? <br>
+                <select name ="color">
+                    <option value="">Select a Color</option>
+                    <option value="red">Red</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="blue">Blue</option>
+                </select>  <br>
+            </div>
+            <div class="question">
+            What is your favorite animal?  <br>  
+                <select name ="animal">
+                    <option value="">Select an Animal</option>
+                    <option value="bunny">Bunny</option>
+                    <option value="tiger">Tiger</option>
+                    <option value="chick">Chick</option>
+                    <option value="koala">Koala</option>
+                </select>  <br>
+            </div>
+                <input id="submit" type="submit" value="Which BT21 Character am I?">
+            </form>';
+        }
+    ?>                
+    </div>
+  
+    <div id="resultpage">
+        <a href="results.php">See Results</a>
     </div>
 
-
-    
-
-    <script type="text/javascript" src="assignment6.js"></script>
 </body>
 </html>
