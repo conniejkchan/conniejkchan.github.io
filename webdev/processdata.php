@@ -78,7 +78,7 @@
         //copy string and edit file_path
         // nano processdata.php on terminal
         //chmod 777 data cd data chmod 777 results.txt
-        $file_path = '/Users/conniechan/Documents/MAMP/webdev/data';
+        $file_path = '/Users/conniechan/Github/conniejkchan.github.io/webdev/data';
         //store results in a file so we can access them later
         file_put_contents($file_path.'/results.txt',$bt21."\n", FILE_APPEND);
 
