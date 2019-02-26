@@ -5,7 +5,7 @@ $file_path = '/Users/conniechan/Github/conniejkchan.github.io/webdev/data';
 $data = file_get_contents($file_path.'/results.txt');
 
 //count the results
-//explode data to array lines
+//explode data to array les
 $lines = explode("\n", $data);
 $cooky = 0;
 $tata = 0;

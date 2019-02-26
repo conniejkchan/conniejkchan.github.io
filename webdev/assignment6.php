@@ -66,6 +66,7 @@
     ?>
     <div id="contentQuiz" class="content">
     <?php
+        //uses $_COOKIE superglobal
         if($_COOKIE['bt21']) {
             print '<p id="str">You are '.$_COOKIE['bt21'].'!!</p>';
             print '<img src="images/' . $_COOKIE['bt21'] . '.png">';
