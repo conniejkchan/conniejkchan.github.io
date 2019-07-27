@@ -1,0 +1,8 @@
+.header-banner {
+    position: relative;
+    height: 800px;
+    min-height: 500px;
+    width: 100%;
+    background-size: cover !important;
+    background: url(../../images/cherry-blossom-wallpaper.jpg) no-repeat top center;
+}

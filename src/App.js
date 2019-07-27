@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import ReactDOM from 'react-dom';
 import { Layout } from 'antd';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
 import './App.css';
 
